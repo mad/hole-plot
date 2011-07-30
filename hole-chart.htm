@@ -1,38 +1,34 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html dir="ltr">
-
     <head>
         <style type="text/css">
             body, html { font-family:helvetica,arial,sans-serif; font-size:90%; }
         </style>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.6/dojo/dojo.xd.js"
-		djConfig="parseOnLoad: true">
-        </script>
+	<script type="text/javascript" src="http://people.iola.dk/olau/flot/jquery.js"></script>
+	<script type="text/javascript" src="http://people.iola.dk/olau/flot/jquery.flot.js"></script>
+	<script type="text/javascript" src="http://people.iola.dk/olau/flot/jquery.flot.selection.js"></script>
 
-	<script type="text/javascript" src="data.js">
-	</script>
+	<script type="text/javascript" src="data.js"></script>
 
-        <script type="text/javascript" src="hole-chart.js">
-	</script>
+	<script src="http://api-maps.yandex.ru/1.1/index.xml?key=AKbKMk4BAAAAk6GteQIA8LJlMZ5WkmWPH86y0ZO7l92HZ2sAAAAAAAAAAAA5jBjcgXVdgnX6VsG5tH5ECNpKPA=="
+	type="text/javascript"></script>
+    <script type="text/javascript" src="yandex-map.js">
+    </script>
 
-        <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/dojo/1.6/dijit/themes/claro/claro.css"
-        />
     </head>
 
-    <body class=" claro ">
-        <div id="chartOne" style="width: 900px; height: 240px; margin: 30px auto 0px auto;">
-        </div>
-        <!-- NOTE: the following script tag is not intended for usage in real
-        world!! it is part of the CodeGlass and you should just remove it when
-        you use the code -->
-        <script type="text/javascript">
-            dojo.addOnLoad(function() {
-                if (document.pub) {
-                    document.pub();
-                }
-            });
-        </script>
+    <body>
+    <div id="placeholder" style="width:100%;height:160px;"></div>
+
+    <div id="overview" style="margin-top:20px;margin-bottom:20px;width:100%;height:30px"></div>
+
+    <script type="text/javascript" src="new-plot.js"></script>
+
+    <center>
+      <div id="YMapsID" style="width:100%;height:900px"></div>
+    </center>
+
     </body>
 
 </html>
